@@ -1,0 +1,40 @@
+/* 头部和侧边栏主菜单字体图标 */
+.iconfont {
+    margin-right: 10px;
+}
+/* 侧边栏子菜单字体图标 */
+.layui-icon-app {
+    margin: 0 10px;
+}
+/* 侧边栏头像 */
+.side-avatar {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+/* 头部区域及侧边栏区域文本头像 */
+.text-avatar {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 8px;
+    color: #fff;
+    background-color: #009688;
+    border-radius: 50%;
+}
+
+/* iframe 区域 */
+.layui-body {
+    overflow: hidden;
+}
+.layui-body iframe {
+    width: 100%;
+    height: 100%;
+}
+/* 底部区域 */
+.layui-footer {
+    text-align: center;
+    font-size: 12px;
+}
