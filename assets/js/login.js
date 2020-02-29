@@ -23,22 +23,22 @@ $(function () {
         }
     })
 
-    $('.reg-box form').on('submit', function (e) {
-        e.preventDefault();
-        // return false;
-        $.ajax({
-            type: 'post',
-            url: url + '/api/reguser',
-            data: $(this).serialize(),
-            success: function (res) {
-                console.log(res);
-                if (res.status !== 0) {
-                    return layer.msg(res.message);
-                };
-                $('#btn-reg').click();
-            }
-        });
-    });
+    // $('.reg-box form').on('submit', function (e) {
+    //     e.preventDefault();
+    //     // return false;
+    //     $.ajax({
+    //         type: 'post',
+    //         url: url + '/api/reguser',
+    //         data: $(this).serialize(),
+    //         success: function (res) {
+    //             console.log(res);
+    //             if (res.status !== 0) {
+    //                 return layer.msg(res.message);
+    //             };
+    //             $('#btn-reg').click();
+    //         }
+    //     });
+    // });
 
 
     // 登录表单验证
@@ -53,6 +53,7 @@ $(function () {
                     return layer.msg(res.message);
                 };
                 layer.msg(res.message);
+                $('#btn-reg').click();
                 sessionStorage.setItem('token', res.token);
                 location.href = '/index.html';
             }
